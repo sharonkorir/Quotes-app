@@ -1,27 +1,42 @@
-# QuotesApp
+# Qvotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
+## Author
 
-## Development server
+- [Sharon Korir](https://github.com/sharonkorir)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Project description
 
-## Code scaffolding
+Qvotes is an angular application where users can view quotes, up-vote or down-vote quotes and add their own quotes to be voted on.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Live Page
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Installation/ setup instructions
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Open terminal
+* Clone the repository
+* Navigate to quotes-app directory and launch on your favorite text editor
 
-## Running end-to-end tests
+Alternatively, click on the link to launch the application on your browser
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Dependencies
 
-## Further help
+You will need a stable network connection
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Technologies used
+
+* HTML 5
+* CSS
+* Angular CLI 13.2.2
+* Bootstrap 5
+
+## Known bugs
+
+## Support and contact details
+
+If you run into any issues or have questions, ideas or concerns, reach out to me via e-mail, at sharon.korir@student.moringaschool.com
+
+### License
+https://choosealicense.com/licenses/mit/ 
+Copyright (c) {2022} **Sharon Korir**
