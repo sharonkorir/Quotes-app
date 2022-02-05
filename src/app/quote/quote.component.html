@@ -6,6 +6,7 @@
       <li *ngFor='let quote of quotes'>
         {{quote.quote}}
         {{quote.author}} in {{quote.movie}}
+        <app-quote-detail [quote]='quote'></app-quote-detail>
       </li>
   </ul>
 </div>
