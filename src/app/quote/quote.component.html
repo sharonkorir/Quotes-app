@@ -7,7 +7,7 @@
       {{quote.quote}}
       <br>
       <button (click)='toggleDetails(i)'>Show more</button>  
-      <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'></app-quote-detail>
+      <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isDeleted)='quoteDelete($event, i)'></app-quote-detail>
     </li>
   </div>      
 </ul>
