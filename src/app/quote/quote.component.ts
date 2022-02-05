@@ -10,11 +10,11 @@ export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
 
-    {quote:'"Do or do not. There is no try."', author: 'Yoda', movie: 'Star Wars', submitter: 'Nick'},
-    {quote:'"Happiness can be found even in the darkest of times, if one only remembers to turn on the light."', author: 'Dumbledore', movie: 'Harry Porter and the Prisoner of Azkaban', submitter: 'Sky'},
-    {quote:'“The flower that blooms in adversity is the most rare and beautiful of all.”', author: 'Fa Zhou', movie: 'Mulan', submitter: 'Patricia'},
-    {quote:'"When life gets you down do you wanna know what you\'ve gotta do? Just keep swimming!"', author: 'Dory', movie: 'Finding Nemo', submitter: 'Jessie'},
-    {quote:'"Our lives are defined by opportunities, even the ones we miss."', author: 'Benjamin Button', movie: 'The Curious Case of Benjamin Button', submitter: 'Diana'},
+    new Quote('"Do or do not. There is no try."', 'Yoda', 'Star Wars', 'Nick'),
+    new Quote('"Happiness can be found even in the darkest of times, if one only remembers to turn on the light."', 'Dumbledore', 'Harry Porter and the Prisoner of Azkaban', 'Sky'),
+    new Quote('“The flower that blooms in adversity is the most rare and beautiful of all.”', 'Fa Zhou', 'Mulan', 'Patricia'),
+    new Quote('"When life gets you down do you wanna know what you\'ve gotta do? Just keep swimming!"', 'Dory', 'Finding Nemo', 'Jessie'),
+    new Quote('"Our lives are defined by opportunities, even the ones we miss."', 'Benjamin Button', 'The Curious Case of Benjamin Button', 'Diana'),
     
   ];
 
