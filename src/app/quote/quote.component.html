@@ -3,13 +3,14 @@
 <hr>
 <ul>
   <div *ngFor='let quote of quotes; let i = index'>  
-    <li>
+    <div>
+      <li appHighlight>{{quote.quote}}</li>
       {{quote.quote}}
       <br>
       {{quote.author}} in {{quote.movie}}
       <br>
       <button (click)='toggleDetails(i)'>Show more</button>  
       <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isDeleted)='quoteDelete($event, i)'></app-quote-detail>
-    </li>
+    </div>
   </div>      
 </ul>
