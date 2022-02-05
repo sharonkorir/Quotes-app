@@ -9,12 +9,13 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    {quote:'', author: '', submitter: ''},
-    {quote:'', author: '', submitter: ''},
-    {quote:'', author: '', submitter: ''},
-    {quote:'', author: '', submitter: ''},
-    {quote:'', author: '', submitter: ''},
-
+    
+    {quote:'', author: '', movie: '', submitter: ''},
+    {quote:'', author: '', movie: '', submitter: ''},
+    {quote:'', author: '', movie: '', submitter: ''},
+    {quote:'', author: '', movie: '', submitter: ''},
+    {quote:'', author: '', movie: '', submitter: ''},
+    
   ];
 
   constructor() { }
