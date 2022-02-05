@@ -3,10 +3,11 @@
   <h2>Quotes</h2>
   <hr>
   <ul>
-      <li *ngFor='let quote of quotes'>
-        {{quote.quote}}
+      <li *ngFor='let quote of quotes; let i = index'>
+        <li>{{quote.quote}}</li>
         {{quote.author}} in {{quote.movie}}
-        <app-quote-detail [quote]='quote'></app-quote-detail>
+        <button (click)='toggleDetails(i)'>Show more</button>  
+        <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'></app-quote-detail>
       </li>
   </ul>
 </div>
