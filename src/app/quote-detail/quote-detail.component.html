@@ -1,16 +1,13 @@
 <p>
-Posted by: {{quote.submitter}}
+Posted by: {{quote.submitter}} on {{quote.postDate|date}}
 </p>
+<div class="row">
+  <div class="col">
+    <button (click)= 'voteUp(true)'>upvote{{quote.votes}}</button>
+  </div>
+  <div class="col">
+    <button (click)= 'voteDown(true)'>downvote{{quote.votes}}</button>
+  </div>
+</div>
 <button (click)= 'deleteQuote(true)'>Delete</button>
-<ul>
-  <li>
-    <a href (click)='voteUp(true)'>
-      upvote
-    </a>
-  </li>
-  <li>
-    <a href (click)='voteDown(true)'>
-      downvote
-    </a>
-  </li>
-</ul>
+<section></section>
