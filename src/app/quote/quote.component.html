@@ -5,12 +5,14 @@
   <div *ngFor='let quote of quotes; let i = index'>  
     <div>
       <li appHighlight>{{quote.quote}}</li>
-      {{quote.quote}}
       <br>
       {{quote.author}} in {{quote.movie}}
       <br>
       <button (click)='toggleDetails(i)'>Show more</button>  
-      <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isDeleted)='quoteDelete($event, i)'></app-quote-detail>
+      <app-quote-detail>
+        *ngIf='quote.showDescription' [quote]='quote' (isDeleted)='quoteDelete($event, i) (isUpVoted)='voteUp($event, i)' (isDownVoted)='voteDown($event, i)'
+      </app-quote-detail>
     </div>
+    
   </div>      
 </ul>

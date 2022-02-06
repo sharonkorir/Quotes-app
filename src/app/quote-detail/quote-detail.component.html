@@ -1,6 +1,16 @@
 <p>
-
-<br>
 Posted by: {{quote.submitter}}
 </p>
 <button (click)= 'deleteQuote(true)'>Delete</button>
+<ul>
+  <li>
+    <a href (click)='voteUp(true)'>
+      upvote
+    </a>
+  </li>
+  <li>
+    <a href (click)='voteDown(true)'>
+      downvote
+    </a>
+  </li>
+</ul>
