@@ -12,7 +12,7 @@ export class HighlightDirective {
   }
 
   private quoteStyle(action:string){
-    this.elem.nativeElement.style.color=action;
+    this.elem.nativeElement.style.backgroundColor=action;
   }
 
 }

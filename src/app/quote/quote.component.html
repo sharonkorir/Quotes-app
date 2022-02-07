@@ -9,7 +9,7 @@
       {{quote.author}}
       <br>
       <button (click)='toggleDetails(i)'>Show more</button>  
-      <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isDeleted)='quoteDelete($event, i)' (isUpVoted)='upVote($event, i)' (isDownVoted)='downVote($event, i)'><!--(isVoted)='quoteVote($event, i)'-->
+      <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isDeleted)='quoteDelete($event, i)' (isUpVoted)='upVote($event, i)' (isDownVoted)='downVote($event, i)'>
       </app-quote-detail>
     </div>
     

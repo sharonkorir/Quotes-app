@@ -4,8 +4,4 @@ export class Quote {
     this.showDescription=false;
 
   }
-  /*quote!: string;
-  author!: string;
-  movie!: any;
-  submitter!: string;*/
 }
