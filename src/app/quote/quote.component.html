@@ -6,7 +6,7 @@
     <div>
       <li appHighlight>{{quote.quote}}</li>
       <br>
-      {{quote.author}} in {{quote.movie}}
+      {{quote.author}}
       <br>
       <button (click)='toggleDetails(i)'>Show more</button>  
       <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isDeleted)='quoteDelete($event, i)' ><!--(isVoted)='quoteVote($event, i)'-->

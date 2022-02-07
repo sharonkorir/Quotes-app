@@ -10,8 +10,6 @@ export class QuoteDetailComponent implements OnInit {
 
   @Input() quote!: Quote;
 
-  constructor() { 
-  }
 
   @Output() isDeleted = new EventEmitter<boolean>();
 
@@ -20,6 +18,8 @@ export class QuoteDetailComponent implements OnInit {
   }
 
   @Output() isVoted = new EventEmitter<boolean>();
+
+  
 
   voteUp(upVoted: boolean,) {
     this.isVoted.emit(upVoted);
@@ -30,6 +30,8 @@ export class QuoteDetailComponent implements OnInit {
   }
 
   
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }

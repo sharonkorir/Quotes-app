@@ -1,6 +1,8 @@
 <p>
 Posted by: {{quote.submitter}} on {{quote.postDate|date}}
+posted {{quote.postDate|date|dateCount}}days ago
 </p>
+
 <div class="row">
   <div class="col">
     <button (click)= 'voteUp(true)'>upvote{{quote.votes}}</button>

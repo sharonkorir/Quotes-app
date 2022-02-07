@@ -10,11 +10,11 @@ export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
 
-    new Quote('"Do or do not. There is no try."', 'Yoda', 'Star Wars', 'Nick', 0, new Date(2021,12,12)),
-    new Quote('"Happiness can be found even in the darkest of times, if one only remembers to turn on the light."', 'Dumbledore', 'Harry Porter and the Prisoner of Azkaban', 'Sky', 0, new Date(2021,12,12)),
-    new Quote('“The flower that blooms in adversity is the most rare and beautiful of all.”', 'Fa Zhou', 'Mulan', 'Patricia', 0, new Date(2021,12,12)),
-    new Quote('"When life gets you down do you wanna know what you\'ve gotta do? Just keep swimming!"', 'Dory', 'Finding Nemo', 'Jessie', 0, new Date(2021,12,12)),
-    new Quote('"Our lives are defined by opportunities, even the ones we miss."', 'Benjamin Button', 'The Curious Case of Benjamin Button', 'Diana', 0, new Date(2021,12,12)),
+    new Quote('"For me, becoming isn\'t about arriving somewhere or achieving a certain aim. I see it instead as forward motion, a means of evolving, a way to reach continuously toward a better self. The journey doesn\'t end."', 'Michelle Obama' , 'Nick', 0, new Date(2021,12,12)),
+    new Quote('"Happiness can be found even in the darkest of times, if one only remembers to turn on the light."', 'J. K. Rowling', 'Sky', 0, new Date(2021,12,12)),
+    new Quote('“Learning how to be still, to really be still and let life happen—that stillness becomes a radiance.”', 'Morgan Freeman', 'Patricia', 0, new Date(2021,12,12)),
+    new Quote('"Try to be a rainbow in someone’s cloud."', 'Maya Angelou', 'Jessie', 0, new Date(2021,12,12)),
+    new Quote('"I\'ve noticed when I fear something, if I just end up doing it, I\'m grateful in the end."', 'Colleen Hoover', 'Diana', 0, new Date(2021,12,12)),
     
   ];
 
@@ -35,7 +35,7 @@ export class QuoteComponent implements OnInit {
       }
     } else(isDownVoted){
       this.quotes.downVote(index, votes){
-        downVotes += 1
+        downVotes -= 1
     }
   }
 */
