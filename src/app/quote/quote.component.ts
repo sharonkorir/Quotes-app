@@ -24,7 +24,11 @@ export class QuoteComponent implements OnInit {
 
   quoteDelete(isDeleted:boolean, index:number){
     if (isDeleted) {
-      this.quotes.splice(index,1);
+      let confirmDelete = confirm('Are you sure you want to delete this quote?')
+
+      if (confirmDelete){
+        this.quotes.splice(index,1);
+      }  
     }
   }
 
