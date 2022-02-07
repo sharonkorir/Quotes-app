@@ -1,17 +1,22 @@
-
-<h2>Movie quotes</h2>
-<hr>
-<ul>
-  <div *ngFor='let quote of quotes; let i = index'>  
-    <div>
-      <li appHighlight>{{quote.quote}}</li>
-      <br>
-      {{quote.author}}
-      <br>
-      <button (click)='toggleDetails(i)'>Show more</button>  
-      <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isDeleted)='quoteDelete($event, i)' (isUpVoted)='upVote($event, i)' (isDownVoted)='downVote($event, i)'>
-      </app-quote-detail>
+<div class="container">
+  <h2>Quotes</h2>
+  <hr>
+  <div class="row">
+    <div *ngFor='let quote of quotes; let i = index'>  
+      <div class="col">
+        <li appHighlight>
+          {{quote.quote}}
+          <br>
+          - {{quote.author}}
+        </li>
+        <br>
+        <button (click)='toggleDetails(i)'>Show more</button>  
+        <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isDeleted)='quoteDelete($event, i)' (isUpVoted)='upVote($event, i)' (isDownVoted)='downVote($event, i)'>
+        </app-quote-detail>
+      </div>
+    </div>  
+    <div class="col">
+      <app-quote-form></app-quote-form>
     </div>
-    
-  </div>      
-</ul>
+  </div>
+</div>

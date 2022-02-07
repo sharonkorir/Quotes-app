@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <h2 class="text-center">Create a new Goal</h2>
+  <hr>
+  <form #quoteForm="ngForm">
+      <div class="form-group">
+
+          <label for="quote">Quote: </label>
+          <input type="text" required class="form-control" id="quote" [(ngModel)]="newQuote.quote" quote="quote">
+
+          Display {{newQuote.quote}}
+
+      </div>
+      <div class="form-group">
+
+          <label for="author">Author: </label>
+          <input type="text" required class="form-control" id="author">
+
+      </div>
+      <div class="form-group">
+
+        <label for="submitter">Submtted by: </label>
+        <input type="text" required class="form-control" id="submitter">
+
+    </div>
+      <div class="form-group">
+          <label for="postDate">Completion</label>
+          <input type='date' id="postDate" required>
+
+      </div>
+      <button type="submit" class="btn btn-success">Add Quote</button>
+  </form>
+</div>
