@@ -1,32 +1,35 @@
 <div class="container-fluid">
   <h2 class="text-center">Create a new Goal</h2>
   <hr>
-  <form #quoteForm="ngForm">
+  <form (ngSubmit)="submitQuote()" #quoteForm='ngForm'>
       <div class="form-group">
 
           <label for="quote">Quote: </label>
-          <input type="text" required class="form-control" id="quote" [(ngModel)]="newQuote.quote" quote="quote">
-
-          Display {{newQuote.quote}}
+          
+          <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" required></textarea>
+          <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+            <p>Quote is required</p>
+          </div>
 
       </div>
       <div class="form-group">
 
           <label for="author">Author: </label>
-          <input type="text" required class="form-control" id="author">
+          <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author='ngModel' required>
+          <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+            <p>Author is required</p>
+          </div>
 
       </div>
       <div class="form-group">
 
-        <label for="submitter">Submtted by: </label>
-        <input type="text" required class="form-control" id="submitter">
+        <label for="submitter">Submitted by: </label>
+        <input type="text" class="form-control" id="submitter" [(ngModel)]="newQuote.submitter" name="submitter" #submitter='ngModel' required>
+          <div [hidden]="submitter.valid || submitter.pristine" class="alert alert-danger">
+            <p>Your name is required</p>
+          </div>
 
     </div>
-      <div class="form-group">
-          <label for="postDate">Completion</label>
-          <input type='date' id="postDate" required>
-
-      </div>
-      <button type="submit" class="btn btn-success">Add Quote</button>
+    <button type="submit" class="btn btn-success">Add Quote</button>
   </form>
 </div>
