@@ -5,10 +5,10 @@ posted {{quote.postDate|date|dateCount}}days ago
 
 <div class="row">
   <div class="col">
-    <button (click)= 'voteUp(true)'>upvote{{quote.votes}}</button>
+    <button (click)= 'voteUp(true)'>upvote {{quote.likes}}</button>
   </div>
   <div class="col">
-    <button (click)= 'voteDown(true)'>downvote{{quote.votes}}</button>
+    <button (click)= 'voteDown(true)'>downvote {{quote.dislikes}}</button>
   </div>
 </div>
 <button (click)= 'deleteQuote(true)'>Delete</button>

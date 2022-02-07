@@ -17,16 +17,16 @@ export class QuoteDetailComponent implements OnInit {
     this.isDeleted.emit(deleted);
   }
 
-  @Output() isVoted = new EventEmitter<boolean>();
-
-  
+  @Output() isUpVoted = new EventEmitter<boolean>();
 
   voteUp(upVoted: boolean,) {
-    this.isVoted.emit(upVoted);
+    this.isUpVoted.emit(upVoted);
   }
 
+  @Output() isDownVoted = new EventEmitter<boolean>();
+
   voteDown(downVoted: boolean,) {
-    this.isVoted.emit(downVoted);
+    this.isDownVoted.emit(downVoted);
   }
 
   
