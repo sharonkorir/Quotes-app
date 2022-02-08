@@ -1,4 +1,4 @@
-# Qvotes
+# Quotes
 
 ## Author
 
@@ -6,11 +6,11 @@
 
 ## Project description
 
-Qvotes is an angular application where users can view quotes, up-vote or down-vote quotes and add their own quotes to be voted on.
+Quotes-app is an angular application where users can view quotes, up-vote or down-vote quotes and add their own quotes to be voted on.
 
 ## Live Page
 
-
+https://sharonkorir.github.io/Quotes-app/
 
 ## Installation/ setup instructions
 
@@ -18,7 +18,7 @@ Qvotes is an angular application where users can view quotes, up-vote or down-vo
 * Clone the repository
 * Navigate to quotes-app directory and launch on your favorite text editor
 
-Alternatively, click on the link to launch the application on your browser
+Alternatively, click on the [link](https://sharonkorir.github.io/Quotes-app/) to launch the application on your browser
 
 ## Dependencies
 
