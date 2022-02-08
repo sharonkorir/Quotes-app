@@ -1,7 +1,17 @@
 .like{
+
   color: green;
+
 }
 
 .dislike{
+
   color: red;
+
+}
+
+p{
+
+  font-weight: 500;
+
 }
