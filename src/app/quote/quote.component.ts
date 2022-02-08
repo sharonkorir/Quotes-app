@@ -10,7 +10,7 @@ export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
 
-    new Quote('"For me, becoming isn\'t about arriving somewhere or achieving a certain aim. I see it instead as forward motion, a means of evolving, a way to reach continuously toward a better self. The journey doesn\'t end."', 'Michelle Obama' , 'Nick', 0, 0, new Date(2022,11,11)),
+    new Quote('"For me, becoming isn\'t about arriving somewhere or achieving a certain aim. I see it instead as forward motion, a means of evolving, a way to reach continuously toward a better self. The journey doesn\'t end."', 'Michelle Obama' , 'Nick', 0, 0, new Date(2021,11,11)),
     new Quote('"Happiness can be found even in the darkest of times, if one only remembers to turn on the light."', 'J. K. Rowling', 'Sky', 0, 0, new Date(2022,1,3)),
     new Quote('“Learning how to be still, to really be still and let life happen—that stillness becomes a radiance.”', 'Morgan Freeman', 'Patricia', 0, 0, new Date(2021,11,12)),
     new Quote('"Try to be a rainbow in someone\'s cloud."', 'Maya Angelou', 'Jessie', 0, 0, new Date(2021,10,12)),

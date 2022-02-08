@@ -1,23 +1,30 @@
-<p>
-Posted by: {{quote.submitter}} on {{quote.postDate|date}}
-</p>
-Posted {{quote.postDate|dateCount}} days ago
+<div>
+  <div class="row justify-content-between">
+    <div class="col">
+      <p>Posted: {{quote.postDate|dateCount}} days ago</p> 
+    </div>
+    <div class="col">
+      <p>Submitted by: {{quote.submitter}} on {{quote.postDate|date}}</p>
+    </div>
+  </div>
+  
+  <div class="row justify-content-between">
+    <div class="col">
+        <button mat-icon-button svgIcon="thumb-up" (click)= 'voteUp(true)'>
+          <mat-icon class="like">thumb_up</mat-icon>
+          {{quote.likes}}
+        </button>
+        <button mat-icon-button (click)= 'voteDown(true)'>
+          <mat-icon class="dislike">thumb_down</mat-icon>
+          {{quote.dislikes}}
+        </button>
+    </div>
+    <div class="col">
+      <button mat-raised-button color="warn" class="delete" (click)= 'deleteQuote(true)'>
+        Delete
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </div>
 
-<div class="row">
-  <div class="col">
-    <button mat-icon-button svgIcon="thumb-up" (click)= 'voteUp(true)'>
-      <mat-icon class="like">thumb_up</mat-icon>
-      {{quote.likes}}
-    </button>
-  </div>
-  <div class="col">
-    <button mat-icon-button (click)= 'voteDown(true)'>
-      <mat-icon class="dislike">thumb_down</mat-icon>
-      {{quote.dislikes}}
-    </button>
-  </div>
-</div>
-<button mat-raised-button color="warn" class="delete" (click)= 'deleteQuote(true)'>
-  Delete
-  <mat-icon>delete</mat-icon>
-</button>
+  

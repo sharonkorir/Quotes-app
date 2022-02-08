@@ -1,18 +1,22 @@
 <div class="container">
   <h2>Quotes</h2>
-  <hr>
   <div class="row">
     <div *ngFor='let quote of quotes; let i = index'>  
       <div class="col">
-        <div class="quote" appHighlight>
-          {{quote.quote}}
+        <div class="card" appHighlight>
+          <div class="card-body" appHighlight>
+            <h3 class="card-title">{{quote.quote}}</h3>
+            <p class="card-text">~ {{quote.author}}</p>
+          </div>
+          <div class="card-footer">
+            <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isDeleted)='quoteDelete($event, i)' (isUpVoted)='upVote($event, i)' (isDownVoted)='downVote($event, i)'>
+            </app-quote-detail>
+            <button mat-raised-button class="toggle" (click)='toggleDetails(i)'>Show more</button>
+            <br>
+            
+          </div>
+        </div> 
         <br>
-        - {{quote.author}}
-        <br>
-        </div>
-        <button mat-raised-button class="toggle" (click)='toggleDetails(i)'>Show more</button>  
-        <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isDeleted)='quoteDelete($event, i)' (isUpVoted)='upVote($event, i)' (isDownVoted)='downVote($event, i)'>
-        </app-quote-detail>
       </div>
     </div>  
     <div class="col">
