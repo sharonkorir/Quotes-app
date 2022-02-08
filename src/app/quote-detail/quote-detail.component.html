@@ -5,10 +5,19 @@ Posted {{quote.postDate|dateCount}} days ago
 
 <div class="row">
   <div class="col">
-    <button (click)= 'voteUp(true)'>upvote {{quote.likes}}</button>
+    <button mat-icon-button svgIcon="thumb-up" (click)= 'voteUp(true)'>
+      <mat-icon class="like">thumb_up</mat-icon>
+      {{quote.likes}}
+    </button>
   </div>
   <div class="col">
-    <button (click)= 'voteDown(true)'>downvote {{quote.dislikes}}</button>
+    <button mat-icon-button (click)= 'voteDown(true)'>
+      <mat-icon class="dislike">thumb_down</mat-icon>
+      {{quote.dislikes}}
+    </button>
   </div>
 </div>
-<button mat-raised-button class="delete" (click)= 'deleteQuote(true)'>Delete</button>
+<button mat-raised-button color="warn" class="delete" (click)= 'deleteQuote(true)'>
+  Delete
+  <mat-icon>delete</mat-icon>
+</button>
