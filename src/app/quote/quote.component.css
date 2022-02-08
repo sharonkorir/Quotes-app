@@ -1,0 +1,40 @@
+h1{
+
+  text-align: center;
+
+  font-family: 'Dosis', sans-serif;
+
+  font-weight: 500;
+
+  font-size: 32px;
+
+}
+
+.card{
+
+  border-radius: 10px;
+
+}
+
+.card:hover {
+
+    box-shadow: 0 8px 17px 0 #231942, 0 6px 20px 0 #231942;
+
+    transition: all .55s ease-in-out;
+}
+
+.toggle{
+
+  background-color: #e4d3db;
+
+}
+
+.card-title{
+
+  font-size: 20px;
+
+  font-family: 'Dosis', sans-serif;
+
+  font-weight: 500;
+
+}

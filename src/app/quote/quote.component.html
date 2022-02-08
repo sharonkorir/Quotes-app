@@ -1,9 +1,9 @@
 <div class="container">
-  <h2>Quotes</h2>
+  <h1>Inspirational quotes.</h1>
   <div class="row">
     <div *ngFor='let quote of quotes; let i = index'>  
       <div class="col">
-        <div class="card" appHighlight>
+        <div class="card">
           <div class="card-body" appHighlight>
             <h3 class="card-title">{{quote.quote}}</h3>
             <p class="card-text">~ {{quote.author}}</p>
