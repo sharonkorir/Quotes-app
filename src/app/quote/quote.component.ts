@@ -1,5 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { Quote, } from '../quote';
+import { Quote } from '../quote';
 
 @Component({
   selector: 'app-quote',
@@ -38,8 +38,8 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  downVote(isUpVoted:boolean, index:number){
-    if (isUpVoted) {
+  downVote(isDownVoted:boolean, index:number){
+    if (isDownVoted) {
       this.quotes[index].dislikes += 1
     }
   }

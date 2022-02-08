@@ -7,7 +7,7 @@ export class HighlightDirective {
 
   constructor(private elem:ElementRef) { }
 
-  @HostListener("click") onClicks(){
+  @HostListener("click") onClick(){
     this.quoteStyle("yellow")
   }
 

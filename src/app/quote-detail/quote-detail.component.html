@@ -11,5 +11,4 @@ Posted {{quote.postDate|dateCount}} days ago
     <button (click)= 'voteDown(true)'>downvote {{quote.dislikes}}</button>
   </div>
 </div>
-<button (click)= 'deleteQuote(true)'>Delete</button>
-<section></section>
+<button mat-raised-button class="delete" (click)= 'deleteQuote(true)'>Delete</button>

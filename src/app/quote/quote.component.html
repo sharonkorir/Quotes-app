@@ -4,13 +4,13 @@
   <div class="row">
     <div *ngFor='let quote of quotes; let i = index'>  
       <div class="col">
-        <li appHighlight>
+        <div class="quote" appHighlight>
           {{quote.quote}}
-          <br>
-          - {{quote.author}}
-        </li>
         <br>
-        <button (click)='toggleDetails(i)'>Show more</button>  
+        - {{quote.author}}
+        <br>
+        </div>
+        <button mat-raised-button class="toggle" (click)='toggleDetails(i)'>Show more</button>  
         <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isDeleted)='quoteDelete($event, i)' (isUpVoted)='upVote($event, i)' (isDownVoted)='downVote($event, i)'>
         </app-quote-detail>
       </div>
